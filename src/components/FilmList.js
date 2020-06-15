@@ -3,7 +3,7 @@ import Film from "./Film.js"
 
 const FilmList = (props) => {
 
-const filmNode = props.films.map((film, index) => {
+const filmNodes = props.films.map((film, index) => {
   return <Film film = {film} key = {index} />});
 
 })
@@ -11,7 +11,7 @@ const filmNode = props.films.map((film, index) => {
 
 return (
 
-  <Film></Film>
+  {filmNodes}
 
 )
 }
