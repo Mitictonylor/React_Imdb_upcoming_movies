@@ -1,10 +1,18 @@
-import React, {Fragment} from "react";
+import React from "react";
+import Film from "./Film.js"
 
 const FilmList = (props) => {
 
+const filmNode = props.films.map((film, index) => {
+  return <Film film = {film} key = {index} />});
+
+})
+
 
 return (
-  <p>Im a filmList</p>
+
+  <Film></Film>
+
 )
 }
 export default FilmList
