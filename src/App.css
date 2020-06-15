@@ -4,6 +4,59 @@
 .external-link{
   background-color: lightblue;
   color: black;
-  padding: 10px;
+  padding: 5px;
+  transition: 0.5s;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.external-link:visited{
+  color: black;
+}
+.external-link:hover{
+  color: grey;
+  background-color: deepskyBlue
+
+}
+.external-link:active{
+  color: black;
+}
+
+.single-film{
+  color: dodgerblue;
+  padding: 5px;
   margin-top: 10px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.single-film:visited{
+  color: dodgerBlue;
+}
+.single-film:hover{
+  color: royalblue;
+  background-color: deepskyBlue
+
+}
+.single-film:active{
+  color: dodgerBlue;
+}
+
+.main-container{
+  width: 30%;
+  height: 60%;
+  border-color:black;
+  border: solid;
+  background-color: linen ;
+  padding: 5px;
+  margin: 10px;
+}
+.title{
+  font-size: 20px;
+}
+hr{
+  margin: 20px
 }

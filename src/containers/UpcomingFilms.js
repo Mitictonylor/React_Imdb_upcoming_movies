@@ -38,12 +38,13 @@ constructor(props){
 
 render(){
   return(
-<>
-<h1>Upcoming Film Releases for UK</h1>
+< div className ="main-container">
+<h1 className = "title">Upcoming Film Releases for UK</h1>
 <hr/>
 <FilmList films = {this.state.films}></FilmList>
+<hr/>
 <a className = "external-link" target ="_blank" href="https://www.imdb.com/calendar/?region=gb">View More Upcoming Releases >></a>
-</>
+</div>
   )
 }
 }
