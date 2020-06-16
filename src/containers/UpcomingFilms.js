@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import FilmList from "../components/FilmList.js"
-
+import Header from "../components/Header.js"
+import MoreRelease from "../components/MoreRelease.js"
 
 
 class UpcomingFilms extends Component{
@@ -12,6 +13,7 @@ constructor(props){
   {
     id: 1,
     name: "Spider-Man: Into the Spider-Verse",
+
     url: "https://www.imdb.com/title/tt4633694/?ref_=rlm"
   },
   {
@@ -39,11 +41,11 @@ constructor(props){
 render(){
   return(
 < div className ="main-container">
-<h1 className = "title">Upcoming Film Releases for UK</h1>
+<Header title ="Upcoming Film Releases for UK"></Header>
 <hr/>
 <FilmList films = {this.state.films}></FilmList>
 <hr/>
-<a className = "external-link" target ="_blank" href="https://www.imdb.com/calendar/?region=gb">View More Upcoming Releases >></a>
+<MoreRelease></MoreRelease>
 </div>
   )
 }

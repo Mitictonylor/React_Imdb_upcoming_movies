@@ -11,7 +11,9 @@ const filmNodes = props.films.map((film, index) => {
 
 return (
 <>
+  <ul>
   {filmNodes}
+  </ul>
 </>
 )
 }
